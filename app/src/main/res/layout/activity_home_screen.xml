@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".home.HomeScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    <ImageView
+        android:id="@+id/android_imag"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/android_imag"
+        app:layout_constraintEnd_toEndOf="@id/android_imag"
+        app:layout_constraintTop_toBottomOf="@id/android_imag"
+        android:text="@string/android"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/btn_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/ios_imag"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ios"
+        app:layout_constraintEnd_toEndOf="@id/btn_android"
+        app:layout_constraintStart_toStartOf="@id/btn_android"
+        app:layout_constraintTop_toBottomOf="@id/btn_android"
+        android:scaleType="centerCrop"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        />
+
+    <Button
+        android:id="@+id/btn_ios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/btn_color"
+        app:layout_constraintStart_toStartOf="@id/ios_imag"
+        app:layout_constraintEnd_toEndOf="@id/ios_imag"
+        app:layout_constraintTop_toBottomOf="@id/ios_imag"
+        android:text="IOS COURSE"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/full_imag"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fullstack"
+        android:backgroundTint="@color/btn_color"
+        app:layout_constraintEnd_toEndOf="@id/btn_ios"
+        app:layout_constraintStart_toStartOf="@id/btn_ios"
+        app:layout_constraintTop_toBottomOf="@id/btn_ios"
+        app:layout_constraintBottom_toTopOf="@id/btn_full"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_full"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/full_imag"
+        app:layout_constraintEnd_toEndOf="@id/full_imag"
+        app:layout_constraintTop_toBottomOf="@id/full_imag"
+        android:text="FULL STACK "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/btn_color"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
